@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roboty SIASUN i konfiguracje spawalnicze | Projekt-Automatyka</title>
+  <meta name="description" content="Roboty SIASUN Desktop, Small Payload, Large Payload, SR25A-12/2.01 oraz konfiguracje spawalnicze M500." />
+  <link rel="stylesheet" href="css/main-v6.css" />
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand-new" href="index.html">
+      <img src="img/logo-projekt-automatyka.png" alt="Projekt-Automatyka">
+    </a>
+
+    <button class="menu-button" aria-label="Menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav">
+      <a class="" href="index.html#oferta">Oferta</a>
+      <a class="" href="systemy-wizyjne.html">Systemy wizyjne</a>
+      <a class="" href="robotyka.html">Robotyka</a>
+      <a class="" href="roboty.html">Roboty na sprzedaż</a>
+      <a class="active" href="siasun.html">SIASUN</a>
+      <a class="" href="index.html#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main id="start">
+  <section class="subhero siasun-page-hero">
+    <div class="container subhero-grid">
+      <div>
+        <p class="label">SIASUN Robotics</p>
+        <h1>Roboty SIASUN do produkcji, spawania i kompletnej automatyzacji stanowisk.</h1>
+        <p class="hero-text">
+          Dobieramy i integrujemy roboty SIASUN pod konkretny proces: paletyzację, pick&place,
+          obsługę maszyn, spawanie, manipulację elementami oraz stanowiska z systemem wizyjnym.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#model-sr25">Wyróżniony model SR25A</a>
+          <a class="button button-outline" href="#spawanie">Konfiguracja do spawania</a>
+        </div>
+      </div>
+
+      <div class="siasun-hero-logo">
+        <img src="img/siasun-logo.png" alt="SIASUN">
+        <span>Roboty przemysłowe • konfiguracje spawalnicze • integracja</span>
+      </div>
+    </div>
+  </section>
+
+  <!--
+    MODEL 3D:
+    Po konwersji STEP -> GLB:
+    1. wrzuć plik jako models/siasun-robot.glb
+    2. usuń klasę "model-3d-disabled" z sekcji poniżej
+  -->
+  <section class="section model-3d-section model-3d-disabled" id="model-3d">
+    <div class="container model-3d-grid">
+      <div>
+        <p class="label">Interaktywny model 3D</p>
+        <h2>Obejrzyj robota SIASUN z każdej strony.</h2>
+        <p>
+          Model można obracać, przybliżać i prezentować bezpośrednio w przeglądarce.
+          Po przygotowaniu animacji osi sekcja może również pokazywać ruch robota.
+        </p>
+      </div>
+      <model-viewer
+        class="robot-model-viewer"
+        src="models/siasun-robot.glb"
+        poster="img/siasun-sr25a-12-201.jpg"
+        alt="Interaktywny model 3D robota SIASUN"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        exposure="1"
+        interaction-prompt="auto">
+      </model-viewer>
+    </div>
+  </section>
+
+
+  <section class="section" id="modele">
+    <div class="container">
+      <div class="section-intro">
+        <p class="label">Oferowane serie</p>
+        <h2>Dobór robota SIASUN według zastosowania.</h2>
+        <p>
+          Poniżej znajduje się oferta podzielona na typowe grupy robotów. Modele dobieramy
+          na podstawie masy detalu, zasięgu, chwytaka, czasu cyklu i środowiska pracy.
+        </p>
+      </div>
+
+      <div class="model-family-grid">
+        <article>
+          <div class="family-icon">D</div><h3>Desktop Type</h3>
+          <p>Kompaktowe roboty do małych stanowisk, montażu, testów, lekkiej manipulacji i integracji z kamerą.</p><em>Najlepsze do: montażu, laboratoriów, małych detali i stanowisk vision.</em>
+          <strong>Przykłady:</strong>
+          <span>SN4A-4/0.58, SN7B-7/0.90, SN10A-10/1.15</span>
+        </article>
+        <article>
+          <div class="family-icon">S</div><h3>Small Payload</h3>
+          <p>Najbardziej uniwersalna grupa do pick&place, spawania, obsługi maszyn, montażu i manipulacji.</p><em>Najlepsze do: spawania, machine tending, pick&place i robot + vision.</em>
+          <strong>Przykłady:</strong>
+          <span>SR12A-12/1.46, SR25A-12/2.01, SR25A-25/1.80, SR50A-50/2.15</span>
+        </article>
+        <article>
+          <div class="family-icon">L</div><h3>Large Payload</h3>
+          <p>Roboty do cięższych detali, paletyzacji, obsługi dużych elementów i aplikacji z dużym zasięgiem.</p><em>Najlepsze do: paletyzacji, ciężkiej manipulacji i dużych chwytaków.</em>
+          <strong>Przykłady:</strong>
+          <span>SR210A-210/2.65, SR220A-125/3.10, SR270A-270/2.70, SR360A-360/2.83</span>
+        </article>
+        <article>
+          <h3>Ultra-High Payload</h3>
+          <p>Roboty do bardzo ciężkich detali, większych chwytaków i wymagających stanowisk przemysłowych.</p>
+          <strong>Przykłady:</strong>
+          <span>SR500A-360/2.83, SR500A-500/2.52</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-feature" id="model-sr25">
+    <div class="container featured-robot">
+      <div class="featured-robot-image">
+        <img src="img/siasun-sr25a-12-201.jpg" alt="SIASUN SR25A-12/2.01">
+      </div>
+
+      <div class="featured-robot-content">
+        <p class="label">Wyróżniony model</p>
+        <h2>SIASUN SR25A-12/2.01</h2>
+        <p>
+          Uniwersalny robot 6-osiowy do spawania, obsługi maszyn, manipulacji, montażu,
+          załadunku i rozładunku oraz aplikacji z systemem wizyjnym.
+        </p>
+
+        <div class="spec-list clean-spec">
+          <div><strong>Udźwig:</strong><span>12 kg</span></div>
+          <div><strong>Zasięg:</strong><span>2010 mm</span></div>
+          <div><strong>Powtarzalność:</strong><span>±0,07 mm</span></div>
+          <div><strong>Masa robota:</strong><span>250 kg</span></div>
+          <div><strong>Ochrona nadgarstka:</strong><span>IP65</span></div>
+          <div><strong>Moc wejściowa:</strong><span>2,2 kW</span></div>
+        </div>
+
+        <div class="use-cases">
+          <span>spawanie łukowe</span>
+          <span>handling</span>
+          <span>assembly</span>
+          <span>loading/unloading</span>
+          <span>laser welding</span>
+        </div>
+
+        <a class="button button-primary" href="mailto:zwolicki@projekt-automatyka.pl?subject=Zapytanie%20o%20SIASUN%20SR25A-12/2.01">Zapytaj o SR25A</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="spawanie">
+    <div class="container">
+      <div class="section-intro">
+        <p class="label">Roboty do spawania</p>
+        <h2>Konfiguracja SIASUN M500 Welding Engineer System.</h2>
+        <p>
+          System spawalniczy może obejmować robota, kontroler, źródło spawalnicze, podajnik drutu,
+          palnik, chłodzenie, czujniki, układ śledzenia spoiny i konfigurację stanowiska.
+        </p>
+      </div>
+
+      <div class="welding-grid">
+        <article class="welding-card visual">
+          <img src="img/siasun-m500-page-1.jpg" alt="SIASUN M500 Welding Engineer System">
+        </article>
+
+        <article class="welding-card">
+          <h3>Co może zawierać stanowisko?</h3>
+          <ul class="check-list">
+            <li>robot przemysłowy SIASUN do spawania</li>
+            <li>kontroler robota i szafa sterownicza</li>
+            <li>źródło spawalnicze, podajnik drutu i palnik</li>
+            <li>chłodzenie wodne lub powietrzne</li>
+            <li>pozycjoner, stół spawalniczy lub osie zewnętrzne</li>
+            <li>czujniki do wykrywania pozycji i śledzenia spoiny</li>
+            <li>osłony, odciąg, bezpieczeństwo i tryby operatorskie</li>
+          </ul>
+          <a class="button button-primary" href="assets/siasun-m500-welding-engineer-system.pdf">Pobierz broszurę PDF</a>
+        </article>
+      </div>
+
+      <div class="welding-functions">
+        <article><h3>Wykrywanie pozycji</h3><p>Możliwość wykorzystania funkcji dotykowych lub bezkontaktowych do wykrywania położenia elementu i startu spoiny.</p></article>
+        <article><h3>Śledzenie spoiny</h3><p>Rozwiązania do korekcji trajektorii podczas spawania, gdy detal lub spoina nie są idealnie powtarzalne.</p></article>
+        <article><h3>Wielowarstwowe spawanie</h3><p>Konfiguracje dla elementów wymagających kilku przejść lub spawania grubszych blach.</p></article>
+        <article><h3>Integracja stanowiska</h3><p>Możemy połączyć robota z pozycjonerem, PLC, HMI, sygnałami bezpieczeństwa i diagnostyką.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container split">
+      <div>
+        <p class="label">Integracja</p>
+        <h2>Nie sprzedajemy samego robota — budujemy działające stanowisko.</h2>
+        <p>
+          Robot musi być częścią całości: chwytak, mechanika, czujniki, bezpieczeństwo,
+          PLC, HMI, system wizyjny, dokumentacja i uruchomienie na produkcji.
+        </p>
+      </div>
+
+      <div class="feature-list">
+        <div><strong>Dobór robota</strong><span>udźwig, zasięg, cykl, środowisko</span></div>
+        <div><strong>Chwytak / palnik / narzędzie</strong><span>projekt pod konkretny detal</span></div>
+        <div><strong>PLC i HMI</strong><span>tryby pracy, diagnostyka, bezpieczeństwo</span></div>
+        <div><strong>Vision</strong><span>detekcja, korekcja, kontrola jakości</span></div>
+        <div><strong>Uruchomienie</strong><span>testy, korekty, szkolenie obsługi</span></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 Projekt-Automatyka</p>
+      <a href="#start">Do góry ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

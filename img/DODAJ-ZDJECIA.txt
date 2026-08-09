@@ -1,0 +1,6 @@
+Dodaj tutaj:
+logo-projekt-automatyka.png - logo firmy
+siasun-logo.png - logo SIASUN
+hero-bg.jpg - tło hero
+kuka-kr90-r3100.jpg - zdjęcie robota KUKA KR 90 R3100 Extra
+realizacja-1.jpg ... realizacja-4.jpg - zdjęcia realizacji

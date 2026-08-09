@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" fill="#07111f"/><rect x="70" y="95" width="660" height="310" rx="28" fill="#f8fafc"/>
+<rect x="120" y="145" width="340" height="210" rx="18" fill="#dbeafe"/><text x="155" y="230" fill="#0f172a" font-family="Arial" font-size="45" font-weight="800">LOT 240809</text><text x="155" y="290" fill="#0f172a" font-family="Arial" font-size="42">12.08.2026</text>
+<rect x="500" y="150" width="150" height="100" rx="16" fill="#2563eb"/><circle cx="575" cy="200" r="28" fill="#08111f"/>
+<path d="M110 135h80M110 135v70M470 135h-80M470 135v70M110 365h80M110 365v-70M470 365h-80M470 365v-70" stroke="#f59e0b" stroke-width="8"/>
+<text x="510" y="310" fill="#64748b" font-family="Arial" font-size="22">OCR / data / numer partii</text></svg>

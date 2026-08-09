@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" fill="#07111f"/><rect x="60" y="80" width="680" height="340" rx="28" fill="#eaf0f8"/>
+<rect x="120" y="270" width="310" height="90" rx="18" fill="#94a3b8"/>
+<rect x="160" y="285" width="70" height="45" rx="8" fill="#334155"/><rect x="275" y="285" width="85" height="45" rx="8" fill="#334155"/>
+<path d="M610 330 C560 260,560 215,515 190 C470 165,445 190,430 215" fill="none" stroke="#2563eb" stroke-width="30" stroke-linecap="round"/>
+<circle cx="610" cy="330" r="30" fill="#0f172a"/><circle cx="520" cy="190" r="30" fill="#0f172a"/>
+<rect x="320" y="105" width="110" height="70" rx="15" fill="#2563eb"/><circle cx="375" cy="140" r="22" fill="#07111f"/>
+<path d="M375 175 L305 270" stroke="#f59e0b" stroke-width="6" stroke-dasharray="12 10"/>
+<circle cx="195" cy="308" r="55" fill="none" stroke="#22c55e" stroke-width="6"/><path d="M195 240v136M127 308h136" stroke="#22c55e" stroke-width="3"/>
+<text x="455" y="120" fill="#0f172a" font-family="Arial" font-size="25" font-weight="700">korekta X / Y / R</text></svg>
