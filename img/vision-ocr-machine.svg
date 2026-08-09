@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720">
+<rect width="1200" height="720" fill="#07111f"/>
+<rect x="70" y="465" width="1060" height="120" rx="22" fill="#1e293b"/>
+<g fill="#64748b"><circle cx="180" cy="590" r="28"/><circle cx="400" cy="590" r="28"/><circle cx="620" cy="590" r="28"/><circle cx="840" cy="590" r="28"/><circle cx="1060" cy="590" r="28"/></g>
+<rect x="265" y="320" width="320" height="145" rx="18" fill="#dbeafe"/>
+<text x="300" y="375" fill="#0f172a" font-size="38" font-family="Arial" font-weight="700">LOT 240809</text>
+<text x="300" y="425" fill="#0f172a" font-size="34" font-family="Arial">12.08.2026</text>
+<rect x="700" y="120" width="170" height="115" rx="22" fill="#2563eb"/>
+<circle cx="785" cy="177" r="34" fill="#020617"/><circle cx="785" cy="177" r="12" fill="#38bdf8"/>
+<path d="M785 235 L500 320" stroke="#f59e0b" stroke-width="6" stroke-dasharray="14 12"/>
+<rect x="250" y="305" width="350" height="175" rx="20" fill="none" stroke="#22c55e" stroke-width="8"/>
+<text x="705" y="335" fill="#f8fafc" font-size="34" font-family="Arial" font-weight="700">OCR VERIFIED</text>
+<text x="705" y="385" fill="#22c55e" font-size="30" font-family="Arial">DATE / LOT OK</text>
+</svg>
