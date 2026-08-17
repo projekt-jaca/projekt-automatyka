@@ -15,12 +15,20 @@ if (menuButton && mainNav) {
   });
 }
 
-// Globalny arkusz dopracowujący układ kart i sekcji.
-// Ładowany po głównym CSS, dzięki czemu działa jako bezpieczna warstwa nadpisująca.
+// Globalna warstwa porządkująca starsze komponenty.
 if (!document.querySelector('link[data-pro-layout]')) {
   const proLayout = document.createElement("link");
   proLayout.rel = "stylesheet";
-  proLayout.href = "css/pro-layout.css";
+  proLayout.href = "css/pro-layout.css?v=20260817";
   proLayout.dataset.proLayout = "true";
   document.head.appendChild(proLayout);
+}
+
+// Finalna warstwa premium — wspólna dla strony głównej i podstron.
+if (!document.querySelector('link[data-premium-v2]')) {
+  const premium = document.createElement("link");
+  premium.rel = "stylesheet";
+  premium.href = "css/premium-v2.css?v=20260817";
+  premium.dataset.premiumV2 = "true";
+  document.head.appendChild(premium);
 }
