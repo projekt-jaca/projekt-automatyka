@@ -14,3 +14,13 @@ if (menuButton && mainNav) {
     });
   });
 }
+
+// Globalny arkusz dopracowujący układ kart i sekcji.
+// Ładowany po głównym CSS, dzięki czemu działa jako bezpieczna warstwa nadpisująca.
+if (!document.querySelector('link[data-pro-layout]')) {
+  const proLayout = document.createElement("link");
+  proLayout.rel = "stylesheet";
+  proLayout.href = "css/pro-layout.css";
+  proLayout.dataset.proLayout = "true";
+  document.head.appendChild(proLayout);
+}
