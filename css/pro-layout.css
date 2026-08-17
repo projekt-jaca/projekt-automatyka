@@ -1,0 +1,334 @@
+/* Professional UI pass — Projekt-Automatyka
+   Globalne nadpisania stylistyczne ładowane po main-v6.css.
+*/
+
+:root {
+  --pro-card-bg: rgba(255, 255, 255, 0.98);
+  --pro-card-border: rgba(15, 23, 42, 0.10);
+  --pro-card-shadow: 0 14px 34px rgba(15, 23, 42, 0.07);
+  --pro-card-shadow-hover: 0 20px 46px rgba(15, 23, 42, 0.11);
+  --pro-radius: 20px;
+}
+
+/* --------------------------------------------------
+   1. USUNIĘCIE KWADRATOWYCH BADGE'ÓW / NUMERÓW
+   -------------------------------------------------- */
+
+.service-card > span,
+.app-card > span,
+.steps article > span,
+.model-section-heading > span,
+.vision-showcase-card > div > span,
+.vision-platforms > article > span,
+.family-icon {
+  display: none !important;
+}
+
+/* --------------------------------------------------
+   2. WSPÓLNY, BARDZIEJ PREMIUM SYSTEM KART
+   -------------------------------------------------- */
+
+.service-card,
+.app-card,
+.steps article,
+.model-family-grid article,
+.model-section,
+.industry-cards article,
+.wide-card,
+.welding-functions article,
+.welding-card,
+.vision-platforms article,
+.vision-benefits article,
+.robot-card,
+.contact-card,
+.subhero-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--pro-card-bg);
+  border: 1px solid var(--pro-card-border);
+  border-radius: var(--pro-radius);
+  box-shadow: var(--pro-card-shadow);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.service-card::before,
+.app-card::before,
+.steps article::before,
+.model-family-grid article::before,
+.industry-cards article::before,
+.wide-card::before,
+.welding-functions article::before,
+.vision-platforms article::before,
+.vision-benefits article::before,
+.subhero-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #2563eb, #38bdf8);
+  opacity: 0.9;
+}
+
+.service-card:hover,
+.app-card:hover,
+.steps article:hover,
+.model-family-grid article:hover,
+.industry-cards article:hover,
+.wide-card:hover,
+.welding-functions article:hover,
+.vision-platforms article:hover,
+.vision-benefits article:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--pro-card-shadow-hover);
+  border-color: rgba(37, 99, 235, 0.22);
+}
+
+/* --------------------------------------------------
+   3. TYPOGRAFIA I ODSTĘPY W KARTACH
+   -------------------------------------------------- */
+
+.service-card,
+.app-card,
+.steps article,
+.model-family-grid article,
+.industry-cards article,
+.wide-card,
+.welding-functions article,
+.vision-platforms article,
+.vision-benefits article {
+  padding: 30px;
+}
+
+.service-card h3,
+.app-card h3,
+.steps article h3,
+.model-family-grid h3,
+.industry-cards h3,
+.wide-card h3,
+.welding-functions h3,
+.vision-platforms h3 {
+  margin: 0 0 12px;
+  color: #0f172a;
+  font-size: 22px;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+}
+
+.service-card p,
+.app-card p,
+.steps article p,
+.model-family-grid p,
+.industry-cards p,
+.wide-card p,
+.welding-functions p,
+.vision-platforms p,
+.vision-benefits span {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* Sekcja SIASUN — czyste karty serii */
+.model-family-grid article {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.model-family-grid article strong {
+  margin-top: auto;
+  padding-top: 20px;
+  color: #2563eb;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.model-family-grid article > span {
+  margin-top: 7px;
+  color: #334155;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.model-family-grid article em {
+  display: block;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+  color: #475569;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+/* Zastosowania robotyki */
+.app-card ul {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.app-card li {
+  color: #475569;
+}
+
+/* Proces wdrożenia — numeracja nie jest potrzebna */
+.steps {
+  gap: 18px;
+}
+
+.steps article {
+  min-height: 180px;
+}
+
+/* --------------------------------------------------
+   4. LEPSZY RYTM SEKCJI
+   -------------------------------------------------- */
+
+.section-intro {
+  max-width: 780px;
+  margin-bottom: 44px;
+}
+
+.section-intro h2 {
+  margin-bottom: 16px;
+}
+
+.section-intro > p:last-child {
+  max-width: 720px;
+}
+
+.service-grid,
+.applications-grid,
+.model-family-grid,
+.industry-cards {
+  gap: 20px;
+}
+
+/* --------------------------------------------------
+   5. DARK SECTIONS — MNIEJ "KAFELKOWE", WIĘCEJ PREMIUM
+   -------------------------------------------------- */
+
+.section-dark .feature-list,
+.section-dark .vision-platforms article:not(.featured) {
+  border-color: rgba(255, 255, 255, 0.10);
+}
+
+.section-dark .vision-platforms article:not(.featured) {
+  background: rgba(255, 255, 255, 0.065);
+  box-shadow: none;
+}
+
+.section-dark .vision-platforms article:not(.featured) h3 {
+  color: #ffffff;
+}
+
+/* --------------------------------------------------
+   6. SUBHERO — bardziej elegancki panel po prawej
+   -------------------------------------------------- */
+
+.subhero-card {
+  padding: 32px 34px;
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.subhero-card .panel-title {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.subhero-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subhero-card li {
+  position: relative;
+  padding: 12px 0 12px 22px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.07);
+  color: #334155;
+}
+
+.subhero-card li:last-child {
+  border-bottom: 0;
+}
+
+.subhero-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2563eb;
+}
+
+/* --------------------------------------------------
+   7. HOME / OFERTA — wygląd zbliżony do makiety
+   -------------------------------------------------- */
+
+.service-card {
+  min-height: 220px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.055);
+}
+
+.service-card h3 {
+  margin-top: 4px;
+}
+
+/* --------------------------------------------------
+   8. MOBILE
+   -------------------------------------------------- */
+
+@media (max-width: 920px) {
+  .service-card,
+  .app-card,
+  .steps article,
+  .model-family-grid article,
+  .industry-cards article,
+  .wide-card,
+  .welding-functions article,
+  .vision-platforms article,
+  .vision-benefits article {
+    padding: 26px;
+  }
+}
+
+@media (max-width: 720px) {
+  .section-intro {
+    margin-bottom: 32px;
+  }
+
+  .service-card,
+  .app-card,
+  .steps article,
+  .model-family-grid article,
+  .industry-cards article,
+  .wide-card,
+  .welding-functions article,
+  .vision-platforms article,
+  .vision-benefits article,
+  .subhero-card {
+    border-radius: 17px;
+  }
+
+  .service-card,
+  .app-card,
+  .steps article,
+  .model-family-grid article,
+  .industry-cards article,
+  .wide-card,
+  .welding-functions article,
+  .vision-platforms article,
+  .vision-benefits article {
+    padding: 23px;
+  }
+
+  .model-family-grid article {
+    min-height: auto;
+  }
+}
