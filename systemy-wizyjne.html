@@ -4,211 +4,46 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Systemy wizyjne dla przemysłu | Projekt-Automatyka</title>
-  <meta name="description" content="Systemy wizyjne: kontrola jakości, detekcja, pomiar, pozycjonowanie robota, kontrola konturu i archiwizacja." />
-  <link rel="stylesheet" href="css/main-v6.css" />
+  <meta name="description" content="Projektujemy i integrujemy przemysłowe systemy wizyjne do kontroli jakości, pomiarów, OCR, identyfikacji i prowadzenia robotów." />
+  <link rel="stylesheet" href="css/main-v6.css?v=20260817" />
+  <link rel="stylesheet" href="css/pro-layout.css?v=20260817" />
+  <link rel="stylesheet" href="css/premium-v2.css?v=20260817" />
+  <link rel="stylesheet" href="css/vision-premium.css?v=20260817" />
 </head>
-
-<body>
+<body class="vision-page">
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand-new" href="index.html">
-      <img src="img/logo-projekt-automatyka.png" alt="Projekt-Automatyka">
-    </a>
-
-    <button class="menu-button" aria-label="Menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
+    <a class="brand-new" href="index.html"><img src="img/logo-projekt-automatyka.png" alt="Projekt-Automatyka"></a>
+    <button class="menu-button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="main-nav">
-      <a class="" href="index.html#oferta">Oferta</a>
-      <a class="active" href="systemy-wizyjne.html">Systemy wizyjne</a>
-      <a class="" href="robotyka.html">Robotyka</a>
-      <a class="" href="roboty.html">Roboty na sprzedaż</a>
-      <a class="" href="siasun.html">SIASUN</a>
-      <a class="" href="index.html#kontakt">Kontakt</a>
+      <a href="index.html#oferta">Oferta</a><a class="active" href="systemy-wizyjne.html">Systemy wizyjne</a><a href="robotyka.html">Robotyka</a><a href="roboty.html">Roboty na sprzedaż</a><a href="siasun.html">SIASUN</a><a href="index.html#kontakt">Kontakt</a>
     </nav>
   </div>
 </header>
-
 <main id="start">
-  <section class="subhero vision-hero vision-flagship">
-    <div class="container subhero-grid">
-      <div>
-        <p class="label">Główny filar Projekt-Automatyka</p>
-        <h1>Systemy wizyjne, które widzą błędy zanim zobaczy je klient.</h1>
-        <p class="hero-text">
-          Projektujemy kompletne systemy vision: od kamery, optyki i oświetlenia,
-          przez algorytmy obrazu i AI, aż po wynik OK/NOK w PLC, zapis zdjęć i raportowanie.
-        </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#przyklady">Zobacz przykłady zastosowań</a>
-          <a class="button button-outline" href="index.html#kontakt">Porozmawiajmy o kontroli jakości</a>
-        </div>
-      </div>
-
-      <div class="vision-real-example">
-        <img src="https://images.pexels.com/photos/36522029/pexels-photo-36522029.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Automatyczny system kontroli wizyjnej w produkcji">
-        <div class="vision-overlay-caption">
-          <strong>Automatyczna kontrola jakości</strong>
-          <span>kamera • analiza obrazu • decyzja OK/NOK</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section vision-problem-strip">
-    <div class="container">
-      <div class="section-intro">
-        <p class="label">Po co kamera na produkcji?</p>
-        <h2>Jeżeli operator może coś przeoczyć, kamera może to sprawdzać przy każdym detalu.</h2>
-        <p>
-          System wizyjny może zastąpić prostą kontrolę wzrokową albo wykonywać pomiary,
-          których człowiek nie jest w stanie robić przy każdym cyklu.
-        </p>
-      </div>
-
-      <div class="vision-benefits">
-        <article><strong>100%</strong><span>kontrolowanych detali zamiast kontroli wyrywkowej</span></article>
-        <article><strong>OK / NOK</strong><span>automatyczna decyzja i sygnał do PLC lub robota</span></article>
-        <article><strong>Traceability</strong><span>zdjęcia, wyniki i historia kontroli dla partii produkcyjnej</span></article>
-        <article><strong>24/7</strong><span>powtarzalna kontrola bez zmęczenia operatora</span></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="przyklady">
-    <div class="container">
-      <div class="section-intro">
-        <p class="label">Przykłady dla klienta</p>
-        <h2>Co konkretnie może zrobić system wizyjny?</h2>
-        <p>Nie trzeba znać kamer ani algorytmów. Wystarczy wskazać problem, który dziś sprawdza człowiek.</p>
-      </div>
-
-      <div class="vision-showcase-grid">
-        <article class="vision-showcase-card">
-          <img src="img/vision-barcode-machine.svg" alt="Odczyt kodów kreskowych i QR">
-          <div><span>01</span><h3>Kody kreskowe i QR</h3>
-          <p>Kamera odczytuje kod, sprawdza poprawność produktu i może przesłać numer do PLC, MES lub bazy danych.</p>
-          <ul><li>identyfikacja produktu</li><li>traceability</li><li>kontrola właściwej etykiety</li></ul></div>
-        </article>
-
-        <article class="vision-showcase-card">
-          <img src="img/vision-ocr-machine.svg" alt="Odczyt daty i znaków OCR">
-          <div><span>02</span><h3>Data, numer partii i OCR</h3>
-          <p>Automatyczna kontrola nadruku daty, numeru partii, znaków lub etykiety zanim produkt opuści stanowisko.</p>
-          <ul><li>kontrola daty ważności</li><li>OCR / OCV</li><li>wykrywanie braku nadruku</li></ul></div>
-        </article>
-
-        <article class="vision-showcase-card">
-          <img src="img/vision-measure-machine.svg" alt="Pomiary wymiarów i konturu">
-          <div><span>03</span><h3>Wymiary, otwory i kontur</h3>
-          <p>Kamera mierzy położenie, średnice, odległości lub porównuje kształt detalu z wzorcem CAD/DXF.</p>
-          <ul><li>kontrola geometrii</li><li>pomiar 2D</li><li>tolerancje OK/NOK</li></ul></div>
-        </article>
-
-        <article class="vision-showcase-card">
-          <img src="https://images.pexels.com/photos/34222005/pexels-photo-34222005.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Pozycjonowanie robota z kamerą">
-          <div><span>04</span><h3>Robot widzi detal</h3>
-          <p>Kamera znajduje detal na taśmie lub stole i przekazuje robotowi korektę pozycji oraz obrotu.</p>
-          <ul><li>pick&place</li><li>losowa orientacja</li><li>vision guidance</li></ul></div>
-        </article>
-
-        <article class="vision-showcase-card">
-          <img src="img/vision-assembly-machine.svg" alt="Kontrola kompletności i jakości produktu">
-          <div><span>05</span><h3>Kontrola montażu</h3>
-          <p>Sprawdzenie obecności śrub, spinek, uszczelek, otworów, elementów wyposażenia albo poprawnego wariantu produktu.</p>
-          <ul><li>poka-yoke</li><li>kontrola kompletności</li><li>redukcja reklamacji</li></ul></div>
-        </article>
-
-        <article class="vision-showcase-card">
-          <img src="img/vision-surface-machine.svg" alt="Kontrola jakości w zakładzie produkcyjnym">
-          <div><span>06</span><h3>Kontrola powierzchni</h3>
-          <p>Wykrywanie rys, zabrudzeń, wad nadruku, braków materiału, przebarwień i innych defektów widocznych na obrazie.</p>
-          <ul><li>wady kosmetyczne</li><li>powtarzalna klasyfikacja</li><li>AI gdy klasyczne metody nie wystarczą</li></ul></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section vision-photo-story">
-    <div class="container">
-      <div class="section-intro">
-        <p class="label">Jedna kamera — wiele zadań</p>
-        <h2>System dopasowujemy do procesu, nie odwrotnie.</h2>
-        <p>Od prostego sprawdzenia obecności elementu po pomiary, identyfikację produktu i prowadzenie robota. Dobieramy kamerę, optykę, światło i algorytm pod konkretny detal oraz tempo produkcji.</p>
-      </div>
-      <div class="vision-photo-mosaic">
-        <figure class="vision-photo-large">
-          <img src="https://images.pexels.com/photos/18471441/pexels-photo-18471441.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Roboty przemysłowe na zautomatyzowanej linii">
-          <figcaption><strong>Robot + Vision</strong><span>lokalizacja detalu i korekta pozycji robota</span></figcaption>
-        </figure>
-        <figure>
-          <img src="https://images.pexels.com/photos/36522029/pexels-photo-36522029.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Automatyczna inspekcja produktu">
-          <figcaption><strong>Kontrola 100%</strong><span>każdy detal, każdy cykl</span></figcaption>
-        </figure>
-        <figure>
-          <img src="https://images.pexels.com/photos/4483942/pexels-photo-4483942.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Skanowanie kodu produktu">
-          <figcaption><strong>Identyfikacja</strong><span>kod, partia, produkt, traceability</span></figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-dark">
-    <div class="container">
-      <div class="section-intro">
-        <p class="label">Trzy poziomy rozwiązania</p>
-        <h2>Od prostej smart kamery do własnego systemu AI.</h2>
-      </div>
-
-      <div class="vision-platforms">
-        <article>
-          <span>01</span><h3>Smart camera</h3>
-          <p>Gotowa kamera przemysłowa do prostych i szybkich kontroli: obecność, kod, pozycja, podstawowe pomiary.</p>
-          <strong>Dobre gdy:</strong><small>zadanie jest dobrze zdefiniowane i liczy się szybkie wdrożenie.</small>
-        </article>
-        <article class="featured">
-          <span>02</span><h3>Industrial camera + komputer</h3>
-          <p>Większa elastyczność, własne algorytmy OpenCV/Python, zaawansowane pomiary, archiwizacja i integracja.</p>
-          <strong>Dobre gdy:</strong><small>system ma być dokładnie dopasowany do procesu.</small>
-        </article>
-        <article>
-          <span>03</span><h3>NVIDIA Jetson / AI</h3>
-          <p>Edge AI do detekcji obiektów, klasyfikacji i problemów, których nie da się stabilnie rozwiązać prostymi regułami.</p>
-          <strong>Dobre gdy:</strong><small>produkt lub wada ma dużą zmienność.</small>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container process-grid">
-      <div class="section-intro compact">
-        <p class="label">Od problemu do stanowiska</p>
-        <h2>Jak powstaje system wizyjny?</h2>
-        <p>Najpierw sprawdzamy detal i warunki procesu. Kamera jest dopiero kolejnym krokiem.</p>
-      </div>
-      <div class="steps">
-        <article><span>01</span><h3>Test detalu</h3><p>Zdjęcia próbek OK/NOK i ocena, czy wada jest widoczna i powtarzalna.</p></article>
-        <article><span>02</span><h3>Optyka i światło</h3><p>Dobór pola widzenia, obiektywu i oświetlenia tak, aby wada była jednoznaczna.</p></article>
-        <article><span>03</span><h3>Algorytm</h3><p>Pomiar, detekcja, OCR, AI lub kombinacja metod z ustawieniem tolerancji.</p></article>
-        <article><span>04</span><h3>Integracja</h3><p>PLC/HMI, wynik OK/NOK, odrzut produktu, logi, zdjęcia i uruchomienie na linii.</p></article>
-      </div>
-    </div>
-  </section>
+<section class="subhero vision-hero-premium"><div class="container vision-hero-grid">
+  <div class="vision-hero-copy"><p class="label">Machine Vision dla przemysłu</p><h1>System widzi detal, mierzy go i podejmuje decyzję w cyklu produkcyjnym.</h1><p class="hero-text">Budujemy kompletne systemy wizyjne: kamera, optyka, oświetlenie, algorytm, integracja z PLC lub robotem, zapis wyników i diagnostyka. Rozwiązanie dobieramy do konkretnego detalu i procesu.</p><div class="hero-actions"><a class="button button-primary" href="#zastosowania">Zobacz zastosowania</a><a class="button button-outline" href="index.html#kontakt">Wyślij detal do analizy</a></div></div>
+  <div class="vision-hero-media"><img src="https://images.pexels.com/photos/36522029/pexels-photo-36522029.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Przemysłowy system automatycznej kontroli wizyjnej"><div class="vision-hero-caption"><div><strong>Automatyczna inspekcja</strong><span>kamera · analiza obrazu · wynik do sterowania</span></div><b>VISION</b></div></div>
+</div></section>
+<section class="vision-trust-strip"><div class="container vision-trust-grid"><div class="vision-trust-item"><strong>Kontrola każdego detalu</strong><span>sprawdzenie wykonywane w cyklu procesu</span></div><div class="vision-trust-item"><strong>PLC / robot</strong><span>wynik i korekcja pozycji przekazywane do sterowania</span></div><div class="vision-trust-item"><strong>Traceability</strong><span>zdjęcia, wyniki i historia kontroli</span></div><div class="vision-trust-item"><strong>AI / klasyczne CV</strong><span>metoda dobierana do rodzaju problemu</span></div></div></section>
+<section class="section" id="zastosowania"><div class="container vision-intro-split"><div class="vision-intro-sticky"><p class="label">Zastosowania</p><h2>Co system wizyjny może sprawdzać na Twojej produkcji?</h2><p>Nie zaczynamy od wyboru kamery. Najpierw definiujemy, co ma zostać sprawdzone, z jaką tolerancją i co maszyna ma zrobić po wykryciu niezgodności.</p></div><div class="vision-usecase-stack">
+<div class="vision-usecase-row"><h3>Identyfikacja produktu</h3><div><p>Odczyt kodów kreskowych, QR i oznaczeń pozwala potwierdzić właściwy produkt, etykietę lub wariant jeszcze przed kolejną operacją.</p><div class="vision-usecase-tags"><span>Barcode</span><span>QR</span><span>Traceability</span></div></div></div>
+<div class="vision-usecase-row"><h3>OCR i oznaczenia</h3><div><p>Kontrola daty, numeru partii, tekstu, znaków i jakości nadruku. System może wykryć brak oznaczenia lub porównać odczyt z recepturą.</p><div class="vision-usecase-tags"><span>OCR / OCV</span><span>Data</span><span>Numer partii</span></div></div></div>
+<div class="vision-usecase-row"><h3>Pomiary i geometria</h3><div><p>Pomiar położenia, średnic, odległości, otworów i konturu. Możliwe jest również porównanie geometrii z wzorcem lub plikiem CAD/DXF.</p><div class="vision-usecase-tags"><span>Pomiar 2D</span><span>Kontur</span><span>Tolerancje</span></div></div></div>
+<div class="vision-usecase-row"><h3>Kontrola montażu</h3><div><p>Sprawdzenie obecności elementów, spinek, śrub, uszczelek, otworów czy właściwej wersji komponentu przed opuszczeniem stanowiska.</p><div class="vision-usecase-tags"><span>Poka-Yoke</span><span>Kompletność</span><span>OK / NOK</span></div></div></div>
+<div class="vision-usecase-row"><h3>Wady powierzchni</h3><div><p>Detekcja zabrudzeń, rys, braków materiału, uszkodzeń nadruku i innych cech widocznych na obrazie, także z użyciem AI przy dużej zmienności.</p><div class="vision-usecase-tags"><span>Defekty</span><span>Klasyfikacja</span><span>AI</span></div></div></div>
+<div class="vision-usecase-row"><h3>Robot + Vision</h3><div><p>Kamera lokalizuje detal i przekazuje robotowi pozycję oraz orientację. Pozwala to obsługiwać elementy leżące w zmiennej pozycji na stole lub przenośniku.</p><div class="vision-usecase-tags"><span>Pick&Place</span><span>Guidance</span><span>Korekcja pozycji</span></div></div></div>
+</div></div></section>
+<section class="section"><div class="container">
+<article class="vision-feature"><div class="vision-feature-grid"><div class="vision-feature-media"><img src="img/vision-measure-machine.svg" alt="System wizyjny do pomiaru wymiarów, otworów i konturu"></div><div class="vision-feature-copy"><span class="vision-feature-kicker">Kontrola geometrii</span><h3>Pomiar bez odkładania detalu na stanowisko kontrolne.</h3><p>Jeżeli wymiar lub położenie cechy można wiarygodnie zobaczyć w obrazie, system może wykonać pomiar automatycznie i przekazać wynik do PLC.</p><div class="vision-feature-list"><span>wymiary i odległości</span><span>średnice i położenie otworów</span><span>kontur i porównanie do wzorca</span><span>sygnał OK / NOK do maszyny</span></div></div></div></article>
+<article class="vision-feature"><div class="vision-feature-grid"><div class="vision-feature-media"><img src="https://images.pexels.com/photos/34222005/pexels-photo-34222005.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Robot przemysłowy współpracujący z systemem wizyjnym"></div><div class="vision-feature-copy"><span class="vision-feature-kicker">Robot guidance</span><h3>Robot nie musi odbierać detalu zawsze z tego samego miejsca.</h3><p>Kamera może odnaleźć element na taśmie lub stole, określić jego przesunięcie i obrót, a następnie przekazać robotowi korektę trajektorii.</p><div class="vision-feature-list"><span>lokalizacja detalu</span><span>korekcja X / Y / obrót</span><span>pick&place z ruchomego procesu</span><span>integracja z programem robota</span></div></div></div></article>
+<article class="vision-feature"><div class="vision-feature-grid"><div class="vision-feature-media"><img src="img/vision-assembly-machine.svg" alt="Automatyczna kontrola kompletności montażu"></div><div class="vision-feature-copy"><span class="vision-feature-kicker">Poka-Yoke</span><h3>System potwierdza kompletność, zanim produkt pojedzie dalej.</h3><p>Kontrola obecności i poprawnego wariantu może zostać wykonana bez udziału operatora, a niezgodny detal zatrzymany lub odrzucony przez sterowanie.</p><div class="vision-feature-list"><span>obecność komponentów</span><span>właściwy wariant produktu</span><span>kontrola montażu</span><span>archiwizacja wyniku</span></div></div></div></article>
+</div></section>
+<section class="section vision-platform-section"><div class="container vision-platform-layout"><div class="vision-platform-copy"><p class="label">Technologia pod zadanie</p><h2>Nie każdy problem wymaga AI.</h2><p>Tam, gdzie klasyczne narzędzia obrazu są stabilne i przewidywalne, wybieramy prostsze rozwiązanie. AI wykorzystujemy wtedy, gdy zmienność produktu lub wady uzasadnia bardziej zaawansowany model.</p></div><div class="vision-platform-list"><div class="vision-platform-item"><h3>Smart camera</h3><p>Gotowe narzędzia do kodów, obecności, pozycji i prostych pomiarów. Dobre rozwiązanie dla jasno zdefiniowanych, powtarzalnych zadań.</p><strong>Szybkie wdrożenia</strong></div><div class="vision-platform-item"><h3>Kamera przemysłowa + komputer</h3><p>Własne algorytmy, większa kontrola nad przetwarzaniem obrazu, archiwizacją i komunikacją z pozostałą automatyką stanowiska.</p><strong>Największa elastyczność</strong></div><div class="vision-platform-item"><h3>NVIDIA Jetson / AI</h3><p>Edge AI do detekcji i klasyfikacji obiektów, gdy wada lub produkt nie ma jednej prostej, deterministycznej cechy.</p><strong>Duża zmienność obrazu</strong></div></div></div></section>
+<section class="section vision-process"><div class="container vision-process-grid"><div class="section-intro compact"><p class="label">Proces wdrożenia</p><h2>Najpierw detal. Potem kamera.</h2><p>Najważniejsze jest potwierdzenie, że cecha ma być widoczna stabilnie w warunkach produkcyjnych. Dopiero na tej podstawie dobieramy sprzęt i algorytm.</p></div><div class="vision-process-steps"><div class="vision-process-step"><h3>Analiza próbek</h3><p>Zdjęcia lub fizyczne próbki OK/NOK, zakres zmienności produktu i definicja kryterium kontroli.</p></div><div class="vision-process-step"><h3>Optyka i oświetlenie</h3><p>Dobór pola widzenia, obiektywu, odległości roboczej i sposobu oświetlenia cechy.</p></div><div class="vision-process-step"><h3>Algorytm i tolerancje</h3><p>Pomiar, OCR, detekcja, klasyfikacja lub AI oraz określenie warunków decyzji systemu.</p></div><div class="vision-process-step"><h3>Integracja z automatyką</h3><p>PLC, HMI, robot, odrzut produktu, receptury, diagnostyka, zapis zdjęć i wyników.</p></div><div class="vision-process-step"><h3>Testy na produkcji</h3><p>Sprawdzenie systemu na rzeczywistych detalach i dostrojenie parametrów przed pracą seryjną.</p></div></div></div></section>
+<section class="vision-cta"><div class="container vision-cta-grid"><div><p class="label">Masz problem do sprawdzenia kamerą?</p><h2>Wyślij zdjęcia detalu i opisz, co ma być uznane za błąd.</h2><p>Na tej podstawie możemy wstępnie ocenić, jaki typ systemu będzie miał sens i czego potrzebujemy do dalszych testów.</p></div><div class="vision-cta-actions"><a class="button button-primary" href="mailto:zwolicki@projekt-automatyka.pl?subject=Zapytanie%20-%20system%20wizyjny">Wyślij zapytanie</a><a class="button button-outline" href="tel:+48660484533">+48 660 484 533</a></div></div></section>
 </main>
-
-<footer class="footer">
-    <div class="container footer-inner">
-      <p>© 2026 Projekt-Automatyka</p>
-      <a href="#start">Do góry ↑</a>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-
-  <!-- Zdjęcia stockowe: Pexels, free to use. Źródła: Peter Xie, Tiger Lily, iMin Technology, Bulat843, Freek Wolsink, Ludovic Delot, ThisIsEngineering. -->
+<footer class="footer"><div class="container footer-inner"><p>© 2026 Projekt-Automatyka</p><a href="#start">Do góry ↑</a></div></footer>
+<script src="js/main.js?v=20260817"></script>
 </body>
 </html>
