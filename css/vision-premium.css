@@ -458,3 +458,22 @@
     align-items: stretch;
   }
 }
+
+/* Vision diagrams — bez przycinania grafik technicznych */
+.vision-feature-media img[src*=".svg"] {
+  object-fit: contain;
+  object-position: center;
+  box-sizing: border-box;
+  padding: 28px;
+  background:
+    radial-gradient(circle at 82% 16%, rgba(47,124,255,.10), transparent 28%),
+    linear-gradient(145deg, #f5f8fc, #e9eff6);
+}
+
+@media (max-width: 720px) {
+  .vision-feature-media img[src*=".svg"] {
+    height: 330px;
+    padding: 16px;
+  }
+}
+
